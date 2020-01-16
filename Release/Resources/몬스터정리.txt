@@ -1,0 +1,14 @@
+대각선
+HoneyBee(1)
+StrawRabbit(2)
+CandyDevil(3)
+
+하강
+HoneySlime(1)
+StrawChick(2)
+kissesDevil(3)
+
+돌진
+HoneyBear(1)
+StrawMouse(2)
+IceDevil(3)

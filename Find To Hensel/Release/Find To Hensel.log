@@ -1,0 +1,35 @@
+﻿  Main.cpp
+  C:\Program Files\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(80): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(133): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(154): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(211): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(221): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(244): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(278): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Skill.h(174): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Skill.h(175): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(145): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(458): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(462): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(466): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(470): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(474): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(483): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(487): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(492): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(502): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(554): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(572): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(583): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(605): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(607): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(635): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(637): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(638): warning C4804: '<': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+  코드를 생성하고 있습니다.
+  0 of 435 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  Find To Hensel.vcxproj -> C:\Users\Administrator\Desktop\Source Code\Find To Hensel\Release\Find To Hensel.exe
