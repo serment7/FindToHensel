@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Windows.h>
+
 #define SAFE_DELETE( x ) {\
 if (x != 0) {\
 	delete (x); \
@@ -24,5 +26,5 @@ static const char g_game_title[] = "Find to Hensel";
 //#define SCREEN_WIDTH GetSystemMetrics(SM_CXSCREEN)
 #define TRANS_WIDTH(x) ((x+1)*SCREEN_WIDTH/2)
 #define TRANS_HEIGHT(y) ((y+1)*SCREEN_HEIGHT/2)
-static HWND g_hWnd;
+extern HWND g_hWnd;
 static bool g_windowed = true;

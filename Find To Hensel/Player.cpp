@@ -1,4 +1,5 @@
 #include "Player.h"
+
 void CPlayer::moveLeft()
 {
 	if ((x-speed)>0)

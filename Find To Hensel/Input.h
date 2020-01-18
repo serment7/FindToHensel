@@ -1,6 +1,5 @@
 #pragma once
 #include <dinput.h>
-#include"Keys.h"
 #pragma comment( lib, "dxguid.lib" )
 #pragma comment( lib, "dinput8.lib" )
 

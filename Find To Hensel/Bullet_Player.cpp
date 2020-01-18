@@ -1,4 +1,5 @@
 #include"Bullet_Player.h"
+
 void Bullet_Player::SetPos(int _x, int _y)
 {
 	x = _x;

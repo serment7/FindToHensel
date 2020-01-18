@@ -1,5 +1,7 @@
 #include"Input.h"
 #include"Extra.h"
+#include"Keys.h"
+
 CDirectInput::CDirectInput()
 {
 	m_CurMouseState = DIMOUSESTATE();

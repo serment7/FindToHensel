@@ -1,7 +1,11 @@
 #include"Game.h"
+#include "Extra.h"
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam);
+
 Game * game;
+HWND g_hWnd;
+
 int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	MSG msg;
@@ -20,7 +24,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	wcx.lpszMenuName = NULL;
 	wcx.style = CS_VREDRAW | CS_HREDRAW;
 	RegisterClassEx(&wcx);
-
+	
 	g_hWnd = CreateWindow(g_game_title, g_game_title, (g_windowed)?WS_OVERLAPPEDWINDOW:WS_EX_TOPMOST | WS_VISIBLE | WS_POPUP, GetSystemMetrics(SM_CXSCREEN) / 2 - 384, 0, SCREEN_WIDTH, SCREEN_HEIGHT, (HWND)NULL, (HMENU)NULL, hInstance, (LPVOID)NULL);
 	game = new Game;
 	game->start();

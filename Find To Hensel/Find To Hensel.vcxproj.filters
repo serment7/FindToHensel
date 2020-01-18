@@ -13,14 +13,29 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Manager">
-      <UniqueIdentifier>{a639624f-3919-4407-9fb7-0ff6ae304832}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Scene">
+      <UniqueIdentifier>{32021777-937a-4c45-8b7f-ed477e444c1e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Object">
-      <UniqueIdentifier>{fff8d28d-5bc0-42b8-bae7-75b56c524207}</UniqueIdentifier>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{2f2af2c9-3be0-42a4-9e18-89a2d79bd1c6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Input">
-      <UniqueIdentifier>{6f595b53-5996-47d5-95d8-e64bdfc0370b}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Skill">
+      <UniqueIdentifier>{37810e48-bc1f-40e5-b251-c84162a4b1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Skill">
+      <UniqueIdentifier>{92d4a728-fb19-45f5-a6bb-11f48a8ff7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Object">
+      <UniqueIdentifier>{c110b402-4827-4227-b73a-198585af0a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{3f94b830-b8cc-40c4-b77b-3033ceb101b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Object\Enemy">
+      <UniqueIdentifier>{d9a02537-e739-4f3d-82c4-9b947d48d42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Enemy">
+      <UniqueIdentifier>{52630b64-4936-4713-929d-558c1d0a8cc5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,55 +48,118 @@
     <ClInclude Include="Game.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ImageManager.h">
-      <Filter>Manager</Filter>
-    </ClInclude>
     <ClInclude Include="Scene.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="GameStart.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Keys.h">
-      <Filter>Input</Filter>
-    </ClInclude>
-    <ClInclude Include="Input.h">
-      <Filter>Input</Filter>
-    </ClInclude>
-    <ClInclude Include="Bullet_Player.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Heart.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Boss.h">
-      <Filter>Object</Filter>
+    <ClInclude Include="StartScene.h">
+      <Filter>헤더 파일\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Skill.h">
+      <Filter>헤더 파일\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseAttack.h">
+      <Filter>헤더 파일\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerAttackLevelOne.h">
+      <Filter>헤더 파일\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerAttackLevelTwo.h">
+      <Filter>헤더 파일\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Marble.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>헤더 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Heart.h">
+      <Filter>헤더 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet_Player.h">
+      <Filter>헤더 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>헤더 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagonalEnemy.h">
+      <Filter>헤더 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="StraightEnemy.h">
+      <Filter>헤더 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="AimStraightEnemy.h">
+      <Filter>헤더 파일\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Keys.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleScene.h">
+      <Filter>헤더 파일\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ImageManager.cpp">
-      <Filter>Manager</Filter>
+    <ClCompile Include="Game.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Object</Filter>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>Input</Filter>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>소스 파일\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseAttack.cpp">
+      <Filter>소스 파일\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerAttackLevelOne.cpp">
+      <Filter>소스 파일\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerAttackLevelTwo.cpp">
+      <Filter>소스 파일\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Marble.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleScene.cpp">
+      <Filter>소스 파일\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Bullet_Player.cpp">
-      <Filter>Object</Filter>
+      <Filter>소스 파일\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagonalEnemy.cpp">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StraightEnemy.cpp">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="AimStraightEnemy.cpp">
+      <Filter>소스 파일\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
