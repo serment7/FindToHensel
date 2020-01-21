@@ -467,8 +467,6 @@ void Battle::collision()
 	{
 		if (hypot(marble_list[j]->getX() - player->getX(), marble_list[j]->getY() - player->getY()) < 70 && (marble_list[j]->getImg() < 4 || marble_list[j]->getImg() == 5))
 		{
-			int index = 0;
-			float distance = 0;
 			switch (marble_list[j]->getMarbleType())
 			{
 			case EMarbleType::None:
@@ -502,7 +500,9 @@ void Battle::collision()
 	{
 		for (int j = 0; j < enemy_list.size(); ++j)
 		{
-			if (hypot(enemy_list[j]->getX() - bullet_player[i]->getX(), enemy_list[j]->getY() - bullet_player[i]->getY()) < ((player_powerup) ? 100.f : 70.f))
+			const float distance = hypot(enemy_list[j]->getX() - bullet_player[i]->getX(), enemy_list[j]->getY() - bullet_player[i]->getY());
+			const float attackRange = (player_powerup) ? 100.f : 70.f;
+			if (distance < attackRange)
 			{
 				enemy_list[j]->damaged(player->getAP());
 				if (enemy_list[j]->getHP() < 1)
@@ -537,7 +537,9 @@ void Battle::collision()
 	for (int j = 0; j < skill_list.size(); ++j)
 	{
 		for (int i = 0; i < enemy_list.size(); ++i) {
-			if (hypot(skill_list[j]->getX() - enemy_list[i]->getX(), skill_list[j]->getY() - enemy_list[i]->getY()) < (skill_list[j]->getImg() == 10) ? 300 : 100)
+			const float distance = hypot(skill_list[j]->getX() - enemy_list[i]->getX(), skill_list[j]->getY() - enemy_list[i]->getY());
+			const float skillRange = (skill_list[j]->getImg() == 10) ? 300 : 100;
+			if (distance < skillRange)
 			{
 				switch (skill_list[j]->getImg())
 				{
