@@ -39,9 +39,9 @@ private:
 	bool getSkill = false;
 public:
 	Battle() = default;
-	virtual void start();
-	virtual Scene* update(const float& frametime);
-	virtual void stop();
+	virtual void start() override;
+	virtual Scene* update(const float& frametime) override;
+	virtual void stop() override;
 	virtual void messageHandler();
 	void collision();
 	int counter;

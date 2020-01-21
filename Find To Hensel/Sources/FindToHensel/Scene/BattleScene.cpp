@@ -11,6 +11,11 @@
 #include "FindToHensel\System\Input.h"
 #include "FindToHensel\Object\Marble.h"
 #include "FindToHensel\Skill\BaseAttack.h"
+#include <iterator>
+
+#ifdef _DEBUG
+#define new new(_CLIENT_BLOCK, __FILE__, __LINE__)
+#endif
 
 void Battle::start()
 {
@@ -46,6 +51,7 @@ void Battle::start()
 	player_hitted = false;
 	player_powerup = false;
 }
+
 Scene* Battle::update(const float& frametime)
 {
 	if (isBack || player->getHP() < 1)
@@ -166,10 +172,10 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -181,9 +187,9 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new StraightEnemy(level));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new StraightEnemy(level));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -195,10 +201,10 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_list.push_back(new StraightEnemy(level));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_list.emplace_back(new StraightEnemy(level));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -211,9 +217,9 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -225,9 +231,9 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -240,8 +246,8 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new AimStraightEnemy(level, player));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -253,8 +259,8 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new StraightEnemy(level));
-				enemy_list.push_back(new AimStraightEnemy(level, player));
+				enemy_list.emplace_back(new StraightEnemy(level));
+				enemy_list.emplace_back(new AimStraightEnemy(level, player));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -266,8 +272,8 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new StraightEnemy(level));
-				enemy_list.push_back(new StraightEnemy(level));
+				enemy_list.emplace_back(new StraightEnemy(level));
+				enemy_list.emplace_back(new StraightEnemy(level));
 				enemy_timer = 0;
 				++counter;
 			}
@@ -279,10 +285,10 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_list.push_back(new StraightEnemy(level));
-				enemy_timer = 0;
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_list.emplace_back(new StraightEnemy(level));
+				enemy_timer = 0.f;
 				++counter;
 			}
 		}
@@ -293,21 +299,14 @@ Scene* Battle::update(const float& frametime)
 		{
 			if (enemy_timer > 0.4)
 			{
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
-				enemy_list.push_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
-				enemy_timer = 0;
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(-1.0), TRANS_HEIGHT(-1.0), true));
+				enemy_list.emplace_back(new DiagonalEnemy(level, TRANS_WIDTH(1.0), TRANS_HEIGHT(-1.0), false));
+				enemy_timer = 0.f;
 				++counter;
 			}
 		}
 	}
-	else
-	{
 
-	}
-	if (skill_timer)
-	{
-
-	}
 	if (shield_timer > 0)
 	{
 		shield_timer -= frametime;
@@ -389,10 +388,27 @@ Scene* Battle::update(const float& frametime)
 }
 void Battle::stop()
 {
+	for (auto bullet : bullet_player)
+	{
+		SAFE_DELETE(bullet)
+	}
+	for (auto enemy : enemy_list)
+	{
+		SAFE_DELETE(enemy);
+	}
+	for (auto skill : skill_list)
+	{
+		SAFE_DELETE(skill);
+	}
+	for (auto marble : marble_list)
+	{
+		SAFE_DELETE(marble);
+	}
 	bullet_player.clear();
 	enemy_list.clear();
 	skill_list.clear();
 	marble_list.clear();
+
 	SAFE_DELETE(directInput);
 	SAFE_DELETE(player);
 	SAFE_DELETE(imageManager);
@@ -441,7 +457,9 @@ void Battle::collision()
 				player->setHit(true);
 				player->damaged();
 			}
-			enemy_list.erase(iter2 + j);
+			std::advance(iter2, j);
+			SAFE_DELETE(*iter2);
+			enemy_list.erase(iter2);
 			return;
 		}
 	}
@@ -474,7 +492,9 @@ void Battle::collision()
 				player->setAP(15);
 				break;
 			}
-			marble_list.erase(iter4 + j);
+			std::advance(iter4, j);
+			SAFE_DELETE(*iter4);
+			marble_list.erase(iter4);
 			return;
 		}
 	}
@@ -482,7 +502,7 @@ void Battle::collision()
 	{
 		for (int j = 0; j < enemy_list.size(); ++j)
 		{
-			if (hypot(enemy_list[j]->getX() - bullet_player[i]->getX(), enemy_list[j]->getY() - bullet_player[i]->getY()) < ((player_powerup) ? 100 : 70))
+			if (hypot(enemy_list[j]->getX() - bullet_player[i]->getX(), enemy_list[j]->getY() - bullet_player[i]->getY()) < ((player_powerup) ? 100.f : 70.f))
 			{
 				enemy_list[j]->damaged(player->getAP());
 				if (enemy_list[j]->getHP() < 1)
@@ -496,14 +516,20 @@ void Battle::collision()
 							ima = 5;
 						marble_list.push_back(new Marble(enemy_list[j]->getX(), enemy_list[j]->getY(), ima));
 					}
-					enemy_list.erase(iter2 + j);
+					std::advance(iter2, j);
+					std::advance(iter, i);
+					SAFE_DELETE(*iter2);
+					SAFE_DELETE(*iter);
+					enemy_list.erase(iter2);
+					bullet_player.erase(iter);
+					return;
 				}
-				bullet_player.erase(iter + i);
-				return;
 			}
 			else if ((bullet_player[i]->getY() < 0))
 			{
-				bullet_player.erase(iter + i);
+				std::advance(iter, i);
+				SAFE_DELETE(*iter);
+				bullet_player.erase(iter);
 				return;
 			}
 		}
@@ -534,6 +560,4 @@ void Battle::collision()
 			}
 		}
 	}
-
-
 }

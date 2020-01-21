@@ -15,21 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\AimStraightEnemy.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\Boss.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\DiagonalEnemy.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\Enemy.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\StraightEnemy.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Includes\FindToHensel\Object\Bullet_Player.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -40,9 +25,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Includes\FindToHensel\Scene\BattleScene.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Scene\GameStart.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Includes\FindToHensel\Scene\Scene.h">
@@ -78,9 +60,6 @@
     <ClInclude Include="Includes\FindToHensel\Extra.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Includes\FindToHensel\Game.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Includes\FindToHensel\Keys.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -90,63 +69,84 @@
     <ClInclude Include="resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Game.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\AimStraightEnemy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\DiagonalEnemy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\Enemy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\HoneyBoss.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\StraightEnemy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sources\Game.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Main.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\DiagonalEnemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Bullet_Player.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\Enemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Enemy\AimStraightEnemy.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Enemy\DiagonalEnemy.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Bullet_Player.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Enemy\Enemy.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Marble.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Enemy\StraightEnemy.cpp">
+    <ClCompile Include="Sources\FindToHensel\Object\Player.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Marble.cpp">
+    <ClCompile Include="Sources\FindToHensel\Scene\BattleScene.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Object\Player.cpp">
+    <ClCompile Include="Sources\FindToHensel\Scene\Scene.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Scene\BattleScene.cpp">
+    <ClCompile Include="Sources\FindToHensel\Scene\StartScene.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Scene\Scene.cpp">
+    <ClCompile Include="Sources\FindToHensel\Skill\BaseAttack.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Scene\StartScene.cpp">
+    <ClCompile Include="Sources\FindToHensel\Skill\PowerAttackLevelOne.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Skill\BaseAttack.cpp">
+    <ClCompile Include="Sources\FindToHensel\Skill\PowerAttackLevelTwo.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Skill\PowerAttackLevelOne.cpp">
+    <ClCompile Include="Sources\FindToHensel\Skill\Skill.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Skill\PowerAttackLevelTwo.cpp">
+    <ClCompile Include="Sources\FindToHensel\System\ImageManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\Skill\Skill.cpp">
+    <ClCompile Include="Sources\FindToHensel\System\Input.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\System\ImageManager.cpp">
+    <ClCompile Include="Sources\FindToHensel\System\SoundDirect.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\System\Input.cpp">
+    <ClCompile Include="Sources\FindToHensel\Game.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Sources\System\SoundDirect.cpp">
+    <ClCompile Include="Sources\FindToHensel\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\HoneyBoss.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -154,5 +154,8 @@
     <ResourceCompile Include="Find To Hensel.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Find To Hensel.aps" />
   </ItemGroup>
 </Project>

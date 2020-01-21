@@ -1,35 +1,80 @@
-﻿  Main.cpp
-  C:\Program Files\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(80): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(133): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(154): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(211): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(221): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(244): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Enemy.h(278): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Skill.h(174): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Skill.h(175): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(145): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(458): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(462): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(466): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(470): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(474): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(483): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(487): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(492): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(502): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(554): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(572): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(583): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(605): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(607): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(635): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(637): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\administrator\desktop\source code\find to hensel\find to hensel\Scene.h(638): warning C4804: '<': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+﻿  HoneyBoss.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\HoneyBoss.cpp(11,13): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Game.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Main.cpp
+  Bullet_Player.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Bullet_Player.cpp(10,12): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  AimStraightEnemy.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(9,22): warning C4244: '인수': 'ULONGLONG'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(10,16): warning C4244: '인수': 'int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(21,22): warning C4244: '인수': 'int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(38,21): warning C4244: '인수': 'const int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(42,29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(46,21): warning C4244: '인수': 'const int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp(53,13): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  DiagonalEnemy.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\DiagonalEnemy.cpp(9,30): warning C4244: '초기화 중': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\DiagonalEnemy.cpp(9,20): warning C4244: '초기화 중': 'const int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\DiagonalEnemy.cpp(30,13): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Enemy.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\Enemy.cpp(47,10): warning C4244: '=': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\Enemy.cpp(77,9): warning C4244: 'return': 'const float'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  StraightEnemy.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp(11,22): warning C4244: '인수': 'ULONGLONG'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp(13,16): warning C4244: '인수': 'int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp(19,20): warning C4244: '인수': 'const int'에서 'const float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp(24,13): warning C4244: '인수': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Marble.cpp
+  Player.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Player.cpp(6,13): warning C4244: '-=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Player.cpp(11,13): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BattleScene.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(26,33): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(333,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(333,57): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(337,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(341,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(345,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(349,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(358,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(362,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(367,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(377,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(446,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(466,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(477,90): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(501,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(503,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(511,26): warning C4244: '인수': 'ULONGLONG'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(537,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(539,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Scene\BattleScene.cpp(540,7): warning C4804: '<': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
+  Scene.cpp
+  StartScene.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  BaseAttack.cpp
+  PowerAttackLevelOne.cpp
+  PowerAttackLevelTwo.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Skill\PowerAttackLevelTwo.cpp(9,8): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Skill\PowerAttackLevelTwo.cpp(10,8): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Skill.cpp
+  ImageManager.cpp
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(139,81): warning C4244: '인수': 'UINT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(139,52): warning C4244: '인수': 'UINT'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(198,125): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(198,90): warning C4244: '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(214,141): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(215,129): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(236,132): warning C4305: '인수': 'double'에서 'FLOAT'(으)로 잘립니다.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\System\ImageManager.cpp(236,81): warning C4244: '인수': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Input.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  SoundDirect.cpp
   코드를 생성하고 있습니다.
-  0 of 435 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+C:\Users\uc503\Documents\github\FindToHensel\Find To Hensel\Sources\FindToHensel\Object\Enemy\Enemy.cpp(77): warning C4172: 지역 변수 또는 임시의 주소를 반환하고 있습니다.
+  All 385 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   코드를 생성했습니다.
-  Find To Hensel.vcxproj -> C:\Users\Administrator\Desktop\Source Code\Find To Hensel\Release\Find To Hensel.exe
+  Find To Hensel.vcxproj -> C:\Users\uc503\Documents\github\FindToHensel\Release\Find To Hensel.exe

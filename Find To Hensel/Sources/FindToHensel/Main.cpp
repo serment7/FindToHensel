@@ -26,9 +26,11 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	RegisterClassEx(&wcx);
 	
 	g_hWnd = CreateWindow(g_game_title, g_game_title, (g_windowed)?WS_OVERLAPPEDWINDOW:WS_EX_TOPMOST | WS_VISIBLE | WS_POPUP, GetSystemMetrics(SM_CXSCREEN) / 2 - 384, 0, SCREEN_WIDTH, SCREEN_HEIGHT, (HWND)NULL, (HMENU)NULL, hInstance, (LPVOID)NULL);
+
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 	game = new Game;
 	game->start();
-
 	ShowWindow(g_hWnd, nCmdShow);
 	UpdateWindow(g_hWnd);
 

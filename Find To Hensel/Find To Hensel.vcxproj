@@ -14,6 +14,7 @@
     <ProjectGuid>{342BC06C-5BBF-414C-BDD9-E1B1DB16F5D5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>FindToHensel</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -59,6 +60,7 @@
       <SDLCheck>true</SDLCheck>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <AdditionalIncludeDirectories>$(SolutionDir)Find To Hensel\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -75,6 +77,7 @@
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Find To Hensel\Includes;;$(SolutionDir)Find To Hensel\Includes</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -89,16 +92,15 @@
     <ClInclude Include="Includes\FindToHensel\Keys.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Bullet_Player.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Enemy\AimStraightEnemy.h" />
-    <ClInclude Include="Includes\FindToHensel\Object\Enemy\Boss.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Enemy\DiagonalEnemy.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Enemy\Enemy.h" />
+    <ClInclude Include="Includes\FindToHensel\Object\Enemy\HoneyBoss.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Enemy\StraightEnemy.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Marble.h" />
     <ClInclude Include="Includes\FindToHensel\Object\Player.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Includes\FindToHensel\Resources.h" />
     <ClInclude Include="Includes\FindToHensel\Scene\BattleScene.h" />
-    <ClInclude Include="Includes\FindToHensel\Scene\GameStart.h" />
     <ClInclude Include="Includes\FindToHensel\Scene\Scene.h" />
     <ClInclude Include="Includes\FindToHensel\Scene\StartScene.h" />
     <ClInclude Include="Includes\FindToHensel\Skill\BaseAttack.h" />
@@ -111,28 +113,32 @@
     <ClInclude Include="Includes\FindToHensel\System\SoundDirect.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sources\Game.cpp" />
-    <ClCompile Include="Sources\Main.cpp" />
-    <ClCompile Include="Sources\Object\Bullet_Player.cpp" />
-    <ClCompile Include="Sources\Object\Enemy\AimStraightEnemy.cpp" />
-    <ClCompile Include="Sources\Object\Enemy\DiagonalEnemy.cpp" />
-    <ClCompile Include="Sources\Object\Enemy\Enemy.cpp" />
-    <ClCompile Include="Sources\Object\Enemy\StraightEnemy.cpp" />
-    <ClCompile Include="Sources\Object\Marble.cpp" />
-    <ClCompile Include="Sources\Object\Player.cpp" />
-    <ClCompile Include="Sources\Scene\BattleScene.cpp" />
-    <ClCompile Include="Sources\Scene\Scene.cpp" />
-    <ClCompile Include="Sources\Scene\StartScene.cpp" />
-    <ClCompile Include="Sources\Skill\BaseAttack.cpp" />
-    <ClCompile Include="Sources\Skill\PowerAttackLevelOne.cpp" />
-    <ClCompile Include="Sources\Skill\PowerAttackLevelTwo.cpp" />
-    <ClCompile Include="Sources\Skill\Skill.cpp" />
-    <ClCompile Include="Sources\System\ImageManager.cpp" />
-    <ClCompile Include="Sources\System\Input.cpp" />
-    <ClCompile Include="Sources\System\SoundDirect.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\HoneyBoss.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Game.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Main.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Bullet_Player.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\AimStraightEnemy.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\DiagonalEnemy.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\Enemy.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Enemy\StraightEnemy.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Marble.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Object\Player.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Scene\BattleScene.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Scene\Scene.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Scene\StartScene.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Skill\BaseAttack.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Skill\PowerAttackLevelOne.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Skill\PowerAttackLevelTwo.cpp" />
+    <ClCompile Include="Sources\FindToHensel\Skill\Skill.cpp" />
+    <ClCompile Include="Sources\FindToHensel\System\ImageManager.cpp" />
+    <ClCompile Include="Sources\FindToHensel\System\Input.cpp" />
+    <ClCompile Include="Sources\FindToHensel\System\SoundDirect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Find To Hensel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Find To Hensel.aps" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,16 +2,14 @@
 
 #include "FindToHensel\Object\Enemy\Enemy.h"
 
-class CPlayer;
-
-class AimStraightEnemy :public Enemy
+class HoneyBoss :
+	public Enemy
 {
-private:
-	CPlayer* p_player;
-	float tox;
-public:
-	AimStraightEnemy(int, CPlayer*);
+	// CBoss을(를) 통해 상속됨
 	virtual void update(const float& frametime) override;
-	void traceTarget(int);
 	virtual void setLevel(const int&) override;
+
+private:
+	float Pattern_Timer = 3.f;
 };
+

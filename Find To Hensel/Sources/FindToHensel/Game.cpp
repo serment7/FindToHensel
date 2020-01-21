@@ -44,5 +44,10 @@ void Game::update()
 }
 void Game::stop()
 {
+	if (scene)
+	{
+		scene->stop();
+	}
+	
 	SAFE_DELETE(scene);
 }
