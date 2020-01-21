@@ -9,8 +9,8 @@ private:
 	float speed = 0.f;
 	int objectcode = 0;
 	int imagecode = 0;
-	D3DXVECTOR2 pos = D3DXVECTOR2(0.f,0.f);
-	int score=0;
+	D3DXVECTOR2 pos = D3DXVECTOR2(0.f, 0.f);
+	int score = 0;
 
 protected:
 	float time = 0.f;
@@ -36,7 +36,7 @@ public:
 	virtual void damaged(int);
 	const int& getImg() const;
 	const int& getScore( ) const;
-	const int& getSpeed() const;
+	const float& getSpeed() const;
 	const float& getX() const;
 	const float& getY() const;
 	const D3DXVECTOR2& getPos() const;

@@ -72,7 +72,7 @@ const int& Enemy::getScore() const
 	return score;
 }
 
-const int& Enemy::getSpeed() const
+const float& Enemy::getSpeed() const
 {
 	return speed;
 }

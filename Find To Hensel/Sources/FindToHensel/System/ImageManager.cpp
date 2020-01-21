@@ -22,13 +22,7 @@ void ImageManager::initD3Dpp()
 	pDirect3D9->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, hWnd, behavior, &d3dpp, &pDevice3D9);
 	D3DXCreateSprite(pDevice3D9, &pSprite);
 }
-ImageManager::ImageManager()
-{
-	windowed = true;
-	pDirect3D9 = nullptr;
-	pDevice3D9 = nullptr;
-	pSprite = nullptr;
-}
+
 void ImageManager::loadPath()
 {
 	player_path[0] = GRETEL_NORMAL_1;
